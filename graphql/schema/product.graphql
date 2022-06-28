@@ -1,0 +1,16 @@
+const { gql } = require("apollo-server-express")
+
+const productSchema = gql`
+    type Query{
+        getAllProducts: [Product]
+    }
+    type Product{
+        id: String
+        name: String
+    }
+    type Mutation{
+        createProduct(id: String, name: String): Product
+    }
+`
+
+ module.exports = {productSchema};
