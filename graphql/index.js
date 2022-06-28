@@ -16,6 +16,5 @@ const start = async function (app) {
     graphqlServer.applyMiddleware({ app })
 }
 
-
 module.exports = { start };
 
